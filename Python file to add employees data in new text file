@@ -1,0 +1,13 @@
+f1=open("EMP.txt","w")
+num1=int(input("Enter the number of employee's-"))
+str2=" "
+for i in range(0,num1):
+    emp_name=input("Enter the name of the Employee-")
+    emp_number=int(input("Enter the number of the Employee-"))
+    Designation=input("Enter designation of the Employee-")
+    Salary=float(input("Enter the Salary of the Employee-"))
+    str1=emp_name+" "+str(emp_number)+" "+ Designation+" "+ str(Salary)+"\n"
+    str2+=str1
+f1.writelines(str2)
+print("Employee Data's have been added")
+f1.close()
