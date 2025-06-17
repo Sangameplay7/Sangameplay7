@@ -1,0 +1,14 @@
+import pickle
+f1=open("EMP.dat","wb")
+list2=[]
+num1=int(input("Enter the number of employee's-"))
+for i in range(0,num1):
+    emp_name=input("Enter the name of the Employee-")
+    emp_number=int(input("Enter the number of the Employee-"))
+    Designation=input("Enter designation of the Employee-")
+    Salary=float(input("Enter the Salary of the Employee-"))
+    list1=[emp_name,emp_number,Designation,Salary]
+    list2+=list1
+pickle.dump(list2,f1)
+print("Employee Data's have been added")
+f1.close()
